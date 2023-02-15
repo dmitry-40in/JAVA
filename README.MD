@@ -1,7 +1,16 @@
 # HOMEWORK
 
-__Task 1:__ [task_001](https://github.com/dmitry-40in/JAVA/blob/main/hw_01/task_001.java)
+__Task 1:__ [task_001.java](https://github.com/dmitry-40in/JAVA/blob/main/hw_01/task_001.java)
+
 Декомпозиция:
 1. Задание числа n. Выбераю запрос ввода с клавиатуры.
 2. Алгоритм расчета треугольного числа.
 3. Вывод результата. Выбираю вывод на экран.
+
+
+__Task 2:__ [task_002.java](https://github.com/dmitry-40in/JAVA/blob/main/hw_02/task_002.java)
+
+Декомпозиция:
+1. Получить значения пременных a, b (целые числа) из файла input.txt
+2. Алгоритм рассчета степени. Улсовия: степень меньше 0, равна 0, больше 0.
+3. Сохранить полученное значение в файле output.txt

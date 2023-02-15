@@ -1,0 +1,4 @@
+февр. 15, 2023 4:17:48 PM Lesson_02.Ex005_Logger main
+WARNING: Тестовое логирование 1
+февр. 15, 2023 4:17:48 PM Lesson_02.Ex005_Logger main
+INFO: Тестовое логирование 2
