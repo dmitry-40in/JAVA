@@ -1,6 +1,6 @@
 # HOMEWORK
 
-__Task 1:__ [task_001](java_projects\hw_01\task_001.java)
+__Task 1:__ [task_001](https://github.com/dmitry-40in/JAVA/blob/main/hw_01/task_001.java)
 Декомпозиция:
 1. Задание числа n. Выбераю запрос ввода с клавиатуры.
 2. Алгоритм расчета треугольника.
