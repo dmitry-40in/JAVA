@@ -1,14 +1,15 @@
-// Написать программу вычисления n-ого треугольного числа.
+
+/**
+* Написать программу вычисления n-ого треугольного числа.
+*/
 
 import java.util.Scanner;
 
 public class task_001 {
     public static void main(String[] args) {
-        // int n = inputNumber();
-        // System.out.println(n);
-        // int t = calculationOfTNumber(n);
-        // System.out.println(t);
-
+        int n = inputNumber();
+        int t = calculationOfTNumber(n);
+        System.out.printf("Для числа n=%d треугольным числом будет T=%d", n, t);
     }
 
     static int inputNumber() {
@@ -21,7 +22,7 @@ public class task_001 {
     }
 
     static int calculationOfTNumber(int n) {
-        int tNumber = (n * (n + 1)) / 2;
+        int tNumber = n * (n + 1) / 2;
         return tNumber;
     }
 }
