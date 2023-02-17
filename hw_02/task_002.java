@@ -33,6 +33,11 @@ public class task_002 {
 
     }
 
-
+    static String getPathToFile(String fileName) {
+        String fileSeparatorSymbol = System.getProperty("file.separator");
+        String pathProject = System.getProperty("user.dir");
+        String pathFile = pathProject + fileSeparatorSymbol + fileName;
+        return pathFile;
+    }
     
 }
