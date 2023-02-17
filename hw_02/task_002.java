@@ -76,4 +76,10 @@ public class task_002 {
         }
         return res;
     }
+
+    static void saveResultToFile(String fileName, String res) throws IOException {
+        FileWriter dataResult = new FileWriter(fileName, false);
+        dataResult.close();
+    }
+    
 }
