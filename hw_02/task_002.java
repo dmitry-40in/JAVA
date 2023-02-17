@@ -14,18 +14,17 @@
 
 package hw_02;
 
-
-
-
-import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+import java.io.BufferedReader;
 
 public class task_002 {
 
     public void main(String[] args) {
-        File f1 = new File("input.txt"); // import java.io.File;
-  
 
-        System.out.println(f1);
 
         
         
@@ -40,4 +39,15 @@ public class task_002 {
         return pathFile;
     }
     
+    static Map<String, Integer> getArguments(String pathFile) throws NumberFormatException, IOException {
+        BufferedReader data = new BufferedReader(new FileReader(pathFile));
+        Map<String, Integer> arguments = new HashMap<String, Integer>();
+        String line;
+        while ((line = data.readLine()) != null) {
+            String[] keyValue = line.split(" ");
+            arguments.put(keyValue[0], Integer.valueOf(keyValue[1]));
+        }
+        data.close();
+        return arguments;
+    }
 }
