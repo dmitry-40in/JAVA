@@ -1,4 +1,2 @@
-new line
-new linenew linenew line
-new linenew linenew line
-new linenew line
+a 10
+b 3

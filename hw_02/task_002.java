@@ -14,6 +14,25 @@
 
 package hw_02;
 
+
+
+
+import java.io.File;
+
 public class task_002 {
 
+    public void main(String[] args) {
+        File f1 = new File("input.txt"); // import java.io.File;
+  
+
+        System.out.println(f1);
+
+        
+        
+
+
+    }
+
+
+    
 }
