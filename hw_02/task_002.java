@@ -23,13 +23,12 @@ import java.io.BufferedReader;
 
 public class task_002 {
 
-    public void main(String[] args) {
-
-
-        
-        
-
-
+    public static void main(String[] args) throws NumberFormatException, IOException {
+        String inputData = getPathToFile("input.txt");
+        Map<String, Integer> res = getArguments(inputData);
+        String outputData = getPathToFile("output.txt");
+        saveResultToFile(outputData, result(res));
+        System.out.println("All done!");
     }
 
     static String getPathToFile(String fileName) {
@@ -38,7 +37,7 @@ public class task_002 {
         String pathFile = pathProject + fileSeparatorSymbol + fileName;
         return pathFile;
     }
-    
+
     static Map<String, Integer> getArguments(String pathFile) throws NumberFormatException, IOException {
         BufferedReader data = new BufferedReader(new FileReader(pathFile));
         Map<String, Integer> arguments = new HashMap<String, Integer>();
@@ -79,7 +78,8 @@ public class task_002 {
 
     static void saveResultToFile(String fileName, String res) throws IOException {
         FileWriter dataResult = new FileWriter(fileName, false);
+        dataResult.write(res);
         dataResult.close();
     }
-    
+
 }
