@@ -5,5 +5,8 @@ public class test {
     static void recursion() {
         System.out.println("***");
         recursion();
+    
+    
     }
+
 }
