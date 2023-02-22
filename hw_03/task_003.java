@@ -3,16 +3,26 @@ public class task_003 {
 
     public static void main(String[] args) {
         int[] array = new int[] { 1, 3, 5, 8, 2, 0, -3, 11, 100, 112, 21 };
-        
+
+        System.out.printf("Начальный массив: ");
+        printArray(array);
+        splitArray(array);
+        System.out.println();
+        System.out.printf("Массив после сортировки: ");
+        printArray(array);
     }
 
     private static void splitArray(int[] arr) {
         int lengthArray = arr.length;
         if (lengthArray == 1) {
-            return; //==================================
+            return;
         }
 
         int middleArray = lengthArray / 2;
+
+        // System.out.println("middleArray = " + middleArray + " lengthArray = " +
+        // lengthArray);
+
         int[] leftArray = new int[middleArray];
         int[] rightArray = new int[lengthArray - middleArray];
 
@@ -20,19 +30,19 @@ public class task_003 {
             leftArray[i] = arr[i];
         }
 
-        for (int i = middleArray; i < lengthArray; i++) {
-            rightArray[i] = arr[i]; // возможно тут ошибка
+        for (int i = 0; i < lengthArray - middleArray; i++) {
+            rightArray[i] = arr[i + middleArray];
         }
 
         splitArray(leftArray);
         splitArray(rightArray);
-        mergeArray(int[] arr, int[] leftArray, int[] rightArray);
+        mergeArray(arr, leftArray, rightArray);
     }
 
     private static void mergeArray(int[] arr, int[] leftArray, int[] rightArray) {
         int leftArrayLength = leftArray.length;
         int rightArrayLength = rightArray.length;
-        
+
         int i = 0;
         int j = 0;
         int index = 0;
@@ -47,9 +57,9 @@ public class task_003 {
             }
             index++;
         }
-        
+
         for (int k = i; k < leftArrayLength; k++) {
-            arr[index] = leftArray[k]; // попробовать писать arr[index++]
+            arr[index++] = leftArray[k];
             index++;
         }
 
@@ -59,4 +69,9 @@ public class task_003 {
         }
     }
 
+    private static void printArray(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.printf("%d ", arr[i]);
+        }
+    }
 }
