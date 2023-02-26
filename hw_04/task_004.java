@@ -2,6 +2,8 @@ public class task_004 {
 
     public static void main(String[] args) {
         int[] array = {19, 2000, -1, 34, 123, 0, -3245, 5, 8};
+
+        heapSort(array);
     }
 
     private static void heapSort(int[] arr) {
@@ -9,6 +11,29 @@ public class task_004 {
         for (int i = arrayLength / 2 - 1; i >= 0; i--) {
             heapify(arr, i, arrayLength);
         }
+    }
+
+    private static void heapify(int[] arr, int i, int arrLength) {
+        int leftChildIndex = 2 * i + 1;
+        int rigtChildIndex = 2 * i + 2;
+        int largestIndex = i;
+        int tmp;
+
+        if (leftChildIndex < arrLength && arr[leftChildIndex] > arr[largestIndex]) {
+            largestIndex = leftChildIndex;
+        }
+
+        if (rigtChildIndex < arrLength && arr[rigtChildIndex] > arr[largestIndex]) {
+            largestIndex = rigtChildIndex; 
+        }
+
+        if (i != largestIndex) {
+            tmp = arr[i];
+            arr[i] = arr[largestIndex];
+            arr[largestIndex] = tmp;
+        }
+
+        heapify(arr, largestIndex, arrLength); // посмотерть как при рекурсии эта строка работает с ограничениями heapSort
     }
 
 }
