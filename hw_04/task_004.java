@@ -1,9 +1,13 @@
 public class task_004 {
 
     public static void main(String[] args) {
-        int[] array = {19, 2000, -1, 34, 123, 0, -3245, 5, 8};
+        int[] array = { 19, 2000, -1, 34, 123, 0, -3245, 5, 8 };
 
+        System.out.println("Массив для сортировки:");
+        printArray(array);
         heapSort(array);
+        System.out.println("\n");
+        System.out.println("Отсортированный массив:");
         printArray(array);
     }
 
@@ -17,7 +21,7 @@ public class task_004 {
 
         for (int i = arrayLength - 1; i >= 0; i--) {
             tmp = arr[i];
-            arr[i] = arr[0]; 
+            arr[i] = arr[0];
             arr[0] = tmp;
 
             heapify(arr, 0, i);
@@ -36,7 +40,7 @@ public class task_004 {
         }
 
         if (rigtChildIndex < arrLength && arr[rigtChildIndex] > arr[largestIndex]) {
-            largestIndex = rigtChildIndex; 
+            largestIndex = rigtChildIndex;
         }
 
         if (i != largestIndex) {
@@ -44,7 +48,8 @@ public class task_004 {
             arr[i] = arr[largestIndex];
             arr[largestIndex] = tmp;
 
-            heapify(arr, largestIndex, arrLength); // посмотерть как при рекурсии эта строка работает с ограничениями heapSort
+            heapify(arr, largestIndex, arrLength); // посмотерть как при рекурсии эта строка работает с ограничениями
+                                                   // heapSort
         }
 
     }
