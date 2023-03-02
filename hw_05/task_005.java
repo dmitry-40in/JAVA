@@ -21,6 +21,17 @@ public class task_005 {
 
         System.out.println("Лабиринт. Печать карты:");
         System.out.println(mapColor(map));
+        System.out.println();
+
+        System.out.println("Карта выходов:");
+        exitMaping(map);
+        System.out.println(mapPrinting(map));
+        System.out.println();
+        
+        System.out.println("Карта выходов:");
+        exitMaping(map);
+        System.out.println(mapColor(map));
+        System.out.println();
 
     }
 
@@ -94,7 +105,7 @@ public class task_005 {
         return startingPoint;
     }
 
-    private static void mapWaveMaker(int[][] map, int[] startingPoint) {
+    static void mapWaveMaker(int[][] map, int[] startingPoint) {
         Queue<int[]> queue = new LinkedList<int[]>();
 
         queue.add(startingPoint);
@@ -152,4 +163,50 @@ public class task_005 {
         return sb.toString();
     }
 
+    private static void exitMaping(int[][] map) {
+        // координаты выхода пока здесь, чтобы проверить работоспособность метода
+        int exitColumn = 1;
+        int exitRow = 18;
+        int exitValue = 19;
+        int[] exit = new int[] {exitValue, exitColumn, exitRow};
+
+        map[exitColumn][exitRow] = -2;  
+
+        
+        
+        Queue<int[]> data = new LinkedList<int[]>();
+
+        data.add(exit);
+
+        while (!data.isEmpty()) {
+            int[] point = data.remove();
+            int valuePoint = point[0];
+            int columnPoint = point[1];
+            int rowPoint = point[2];
+
+            exitPointPainter(map, valuePoint, columnPoint - 1, rowPoint, data);
+            exitPointPainter(map, valuePoint, columnPoint, rowPoint + 1, data);
+            exitPointPainter(map, valuePoint, columnPoint + 1, rowPoint, data);
+            exitPointPainter(map, valuePoint, columnPoint, rowPoint - 1, data);
+        }
+
+        // for (int i = 0; i < map.length; i++) {
+        //     for (int j = 0; j < map[i].length; j++) {
+        //         System.out.printf("%3d", map[i][j]);
+        //     }
+        //     System.out.println();
+        // }
+
+    }
+
+    private static void exitPointPainter(int[][] map, int value, int column, int row, Queue<int[]> data) {
+        int[] tmp = new int[3];
+        if (map[column][row] != -1 && map[column][row] == value - 1 ) {
+            map[column][row] = -2;
+            tmp[0] = value - 1;
+            tmp[1] = column;
+            tmp[2] = row;
+            data.add(tmp);
+        }
+    }
 }
