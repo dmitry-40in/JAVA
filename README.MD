@@ -46,6 +46,7 @@ __Task 5:__ [task_005.java](https://github.com/dmitry-40in/JAVA/blob/main/hw_05/
 4. Написать метод вывода раскрашенной карты. 
 
 __Task 6:__ [task_006.java](https://github.com/dmitry-40in/JAVA/blob/main/hw_06/)
+
 Декомпозия:
 1. Написать метод восстановления пути.
 2. Реализовать классы в существующем коде.
