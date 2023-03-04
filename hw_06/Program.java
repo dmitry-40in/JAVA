@@ -17,23 +17,16 @@ public class Program {
         Wave wave = new Wave();     
         wave.mapWaveMaker(mapa, rowCat, columnCat, mapa[columnCat][rowCat]);
 
+        MapPrinter mapaPrint = new MapPrinter();
+        System.out.println("Карта лабирианта с котиком, без выхода:");
+        mapaPrint.arrayMap(mapa);
 
         Exit way = new Exit();
         way.exitMaping(mapa, rowExit, columnExit, mapa[columnExit][rowExit]);
         mapa[columnCat][rowCat] = 1;
         mapa[columnExit][rowExit] = -3;
 
-        MapPrinter mapaPrint = new MapPrinter();
+        System.out.println("Карта лабирианта с котиком, выходом и путями одинаковой длины до выхода:");
         System.out.println(mapaPrint.colorMap(mapa));
-        mapaPrint.arrayMap(mapa);
-        
-
-        System.out.println(mapaPrint.colorMap(mapa));
-        // System.out.println(mapa[columnExit][rowExit]);
-        // System.out.println(mapa[1][1]);
-
-
-        //System.out.println(cat.column);
-
     }
 }   
