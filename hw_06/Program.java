@@ -1,7 +1,6 @@
 public class Program {
-
     public static void main(String[] args) {
-        int columnCat = 7; 
+        int columnCat = 7;
         int rowCat = 6;
 
         int columnExit = 1;
@@ -9,12 +8,12 @@ public class Program {
 
         Point cat = new Point(columnCat, rowCat);
         Point exit = new Point(columnExit, rowExit);
- 
+
         Maze mazeMap = new Maze();
         int[][] mapa = mazeMap.map;
         mapa[columnCat][rowCat] = 1;
 
-        Wave wave = new Wave();     
+        Wave wave = new Wave();
         wave.mapWaveMaker(mapa, rowCat, columnCat, mapa[columnCat][rowCat]);
 
         MapPrinter mapaPrint = new MapPrinter();
@@ -29,4 +28,5 @@ public class Program {
         System.out.println("Карта лабирианта с котиком, выходом и путями одинаковой длины до выхода:");
         System.out.println(mapaPrint.colorMap(mapa));
     }
-}   
+    
+}

@@ -4,7 +4,7 @@ import java.util.Queue;
 public class Wave {
 
     public void mapWaveMaker(int[][] map, int rowValue, int columnValue, int cellPoint) {
-        int[] startingPoint = new int[]{cellPoint, columnValue, rowValue}; // Как значение котика и выхода использовать в одном файле
+        int[] startingPoint = new int[] { cellPoint, columnValue, rowValue };
 
         Queue<int[]> queue = new LinkedList<int[]>();
 
@@ -33,5 +33,5 @@ public class Wave {
             queue.add(tmp);
         }
     }
-    
+
 }

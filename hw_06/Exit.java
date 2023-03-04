@@ -4,11 +4,11 @@ import java.util.Queue;
 public class Exit {
 
     public void exitMaping(int[][] map, int exitRow, int exitColumn, int exitValue) {
-                
-        int[] exit = new int[] {exitValue, exitColumn, exitRow};
 
-        map[exitColumn][exitRow] = -2;  
-               
+        int[] exit = new int[] { exitValue, exitColumn, exitRow };
+
+        map[exitColumn][exitRow] = -2;
+
         Queue<int[]> data = new LinkedList<int[]>();
 
         data.add(exit);
@@ -29,7 +29,7 @@ public class Exit {
 
     private void exitPointPainter(int[][] map, int value, int column, int row, Queue<int[]> data) {
         int[] tmp = new int[3];
-        if (map[column][row] != -1 && map[column][row] == value - 1 ) {
+        if (map[column][row] != -1 && map[column][row] == value - 1) {
             map[column][row] = -2;
             tmp[0] = value - 1;
             tmp[1] = column;
