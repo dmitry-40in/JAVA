@@ -1,5 +1,6 @@
 package Lesson_07.Ex003;
 
+import javax.print.Doc;
 
 /** 
  * Это точка 2D
