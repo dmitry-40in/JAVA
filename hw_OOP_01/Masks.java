@@ -1,3 +1,12 @@
 public class Masks extends HygieneItems{
-    // Что делать еслит нет количства штук в упаковке
+    public Masks(String name, int price, int quantity, String unitoOfMeasurement, int piecesPerPack) {
+        super(name, price, quantity, unitoOfMeasurement, piecesPerPack);
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder(super.toString());
+        sb.append(String.format("."));
+        return sb.toString();
+    }
 }

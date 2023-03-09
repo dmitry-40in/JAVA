@@ -4,6 +4,13 @@ public class Product {
     private int quantity;
     private String unitoOfMeasurement;
 
+    public Product(String name, int price, int quantity, String unitoOfMeasurement) {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+        this.unitoOfMeasurement = unitoOfMeasurement;
+    }
+
     public String getName() {
         return this.name;
     }
@@ -27,7 +34,7 @@ public class Product {
     public void setQuantity(int value) {
         this.quantity = value;
     }
-    
+
     public String getUnitoOfMeasurement() {
         return this.unitoOfMeasurement;
     }
@@ -36,7 +43,14 @@ public class Product {
         this.unitoOfMeasurement = value;
     }
 
-    
-    
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(String.format("name: %s, ", this.name));
+        sb.append(String.format("price: %d, ", this.price));
+        sb.append(String.format("quantity: %d ", this.quantity));
+        sb.append(String.format("%s., ", this.unitoOfMeasurement));
+        return sb.toString();
+    }
 
 }
