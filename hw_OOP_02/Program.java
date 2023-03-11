@@ -37,10 +37,15 @@ public class Program {
 
         Zoo myZoo = new Zoo();
         myZoo.addZooResident(s);
+        myZoo.addZooResident(t);
+        myZoo.addZooResident(w);
+        myZoo.addZooResident(s);
+        myZoo.addZooResident(c);
+        myZoo.addZooResident(ch);
         myZoo.addZooResident(d);
-        myZoo.showInfoAboutZooResidentI(1);
+        myZoo.showInfoAboutZooResidentI(7);
         // myZoo.removeZooResidentI(1);
-        myZoo.showInfoAboutZooResidentI(2);
+        myZoo.showInfoAboutZooResidentI(1);
         myZoo.makeSoundZooResidentI(2);
 
         System.out.println("=====");
