@@ -1,5 +1,5 @@
 public abstract class Bird extends Animal {
-    private int flightAltitude;
+    protected int flightAltitude;
 
     protected Bird(int growth, int weight, String colorOfEyes, int flightAltitude) {
         super(growth, weight, colorOfEyes);
