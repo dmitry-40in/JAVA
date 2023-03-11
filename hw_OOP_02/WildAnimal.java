@@ -11,7 +11,7 @@ public abstract class WildAnimal extends Animal {
     @Override
     public void printInfo() {
         super.printInfo();
-        System.out.printf("место обитания: %s, дата нахождения: %s", habitat, dateOfLocation);
+        System.out.printf(", место обитания: %s, дата нахождения: %s", habitat, dateOfLocation);
     }
 
 }

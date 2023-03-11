@@ -20,7 +20,7 @@ public abstract class Pet extends Animal {
     @Override
     public void printInfo() {
         super.printInfo();
-        System.out.printf("кличка: %s, порода: %s, наличие прививок: %b, цвет шерсти: %s, дата рождения: %s, ",
+        System.out.printf(", кличка: %s, порода: %s, наличие прививок: %b, цвет шерсти: %s, дата рождения: %s, ",
                 nickname,
                 breed, vaccinations, colorOfAnimal, birthdate);
     }

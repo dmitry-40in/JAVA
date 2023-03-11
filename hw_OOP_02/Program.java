@@ -32,5 +32,24 @@ public class Program {
         s.sound();
         s.printInfo();
         s.imFly();
+
+        System.out.println("=====");
+
+        Zoo myZoo = new Zoo();
+        myZoo.addZooResident(s);
+        myZoo.addZooResident(d);
+        myZoo.showInfoAboutZooResidentI(1);
+        // myZoo.removeZooResidentI(1);
+        myZoo.showInfoAboutZooResidentI(2);
+        myZoo.makeSoundZooResidentI(2);
+
+        System.out.println("=====");
+
+        myZoo.printInfoAllZooResidents();
+        
+        System.out.println("=====");
+
+        myZoo.makeSoundAllZooResidents();
+
     }
 }

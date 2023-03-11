@@ -12,7 +12,7 @@ public abstract class Animal {
     // public abstract void makeSound();
 
     public void printInfo() {
-        System.out.printf("Рост животного: %d, вес животного: %d, цвет глаз животного: %s, ", growth, weight,
+        System.out.printf("Рост животного: %d, вес животного: %d, цвет глаз животного: %s", growth, weight,
                 colorOfEyes);
     }
 
