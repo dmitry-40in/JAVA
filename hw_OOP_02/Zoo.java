@@ -96,4 +96,36 @@ public class Zoo {
 
     }
 
+    public void featureActionForZooResidentI(int index) {
+        
+            if (animalsArray.get(index - 1) instanceof Bird) {
+                Bird y = (Bird) animalsArray.get(index - 1);
+                y.imFly();
+            }
+
+            else if (animalsArray.get(index - 1) instanceof Dog) {
+                Dog y = (Dog) animalsArray.get(index - 1);
+                y.getTrainig();
+                if (y.getTrainig() == false) {
+                    y.makeTraining();
+                    y.showAffection();
+                }
+                else {
+                    System.out.println("Собака дрессирована.");
+                    y.showAffection();
+                }
+            }
+
+            else if (animalsArray.get(index - 1) instanceof Pet) {
+                Pet y = (Pet) animalsArray.get(index - 1);
+                y.showAffection();
+            }
+
+            else {
+                System.out.println("У этого животного нет особенностей. Выбери птицу или домашнее животное, собаку");
+            }
+        
+        
+    }
+
 }

@@ -13,6 +13,7 @@ public class Dog extends Pet implements MakeSound {
 
     public void makeTraining() {
         this.training = true;
+        System.out.println("Дрессеруем собаку...");
     }
 
     @Override
