@@ -1,18 +1,18 @@
 import java.util.ArrayList;
 
-public abstract class Polygons extends Shapes{
+public abstract class Polygons extends Shape {
     public ArrayList<Integer> sides;
 
     public Polygons() {
         this.sides = new ArrayList<Integer>();
     }
 
-    public void perimeterOut( ) {
-        int perimetr = 0;
+    public int perimeterOut( ArrayList<Integer> sides) {
+        int perimeter = 0;
         for (Integer i : sides) {
-            perimetr = perimetr + i;
+            perimeter = perimeter + i;
         }
-        System.out.printf("Периметр равен %d\n", perimetr);
+        return perimeter;
     }
     
 }
