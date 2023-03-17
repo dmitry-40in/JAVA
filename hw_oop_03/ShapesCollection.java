@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class ShapesCollection {
-    public ArrayList<Shape> shapeCollection;
+    private ArrayList<Shape> shapeCollection;
 
     public ShapesCollection() {
         shapeCollection = new ArrayList<Shape>();
@@ -30,7 +30,7 @@ public class ShapesCollection {
     
     }
 
-    
+
 
     // changeShapeByIndex
     // public Shape getShape(int) {
