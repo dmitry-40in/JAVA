@@ -1,6 +1,6 @@
 public abstract class Shape {
-    public abstract void printShapeArea();
-    public abstract void shapeType();
-    public abstract void printShapePerimeter();
+    public abstract String getShapeType(); // это вынести в интерфейс вместе с исклбчениями
+    public abstract int getShapePerimeter();
+    public abstract int getShapeArea();
         
 }

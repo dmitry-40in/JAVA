@@ -1,4 +1,4 @@
 public interface CircumferenceLength {
-    public void printLength();
+    public int getLength();
       
 }

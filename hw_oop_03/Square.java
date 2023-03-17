@@ -3,48 +3,46 @@ public class Square extends Polygons {
     private int sideB;
     private int perimeter;
     private int area;
+    int y;
 
     public Square(int sideA, int sideB) {
         this.sideA = sideA;
         this.sideB = sideB;
-        sides.add(0, sideA);
-        sides.add(1, sideB);
-        sides.add(2, sideA);
-        sides.add(3, sideB);
-        this.perimeter = perimeterOut(sides);
-        this.area = sideA * sideB;
-    } 
-    
-    public Square(int sideA) {
-        this(sideA, sideA); 
+        setSide(this.sideA);
+        setSide(this.sideB);
+        setSide(this.sideA);
+        setSide(this.sideB);
+        this.perimeter = perimeterOut();
+        this.area = getSide(0) * getSide(1);
     }
 
-    public int getPerimeter() {
+    public Square(int sideA) {
+        this(sideA, sideA);
+    }
+
+
+    // Выдеить в интерфейс с ифами и кейсами и многоугольник и ограничения исключения можно сразу написать
+    @Override
+    public String getShapeType() {
+        if (this.sideA == this.sideB) {
+            return "квадрат";
+        } else {
+            return "прямоугольник";
+        }
+    }
+    //
+
+    @Override
+    public int getShapePerimeter() {
         return this.perimeter;
     }
 
-    public int getArea() {
+    @Override
+    public int getShapeArea() {
         return this.area;
     }
 
-    @Override
-    public void shapeType() {
-        if (this.sideA == this.sideB) {
-            System.out.printf("Эта фигра - квадрат.\n");
-        }
-        else {
-            System.out.printf("Эта фигра - прямоугольник.\n");
-        }
-    }
-
-    @Override
-    public void printShapePerimeter() {
-        System.out.printf("Периметр равен %d\n", this.perimeter);
-    }
-     
-    @Override
-    public void printShapeArea() {       
-        System.out.printf("Площадь равна %d\n", area);
-    }  
+    // y = (int) (Math.PI * Math.pow(10, 2));
+    // int qqq = (int) (Math.PI * Math.pow(10, 2));
 
 }
