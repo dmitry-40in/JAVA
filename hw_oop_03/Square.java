@@ -3,7 +3,7 @@ public class Square extends Polygons {
     private int sideB;
     private int perimeter;
     private int area;
-    int y;
+    // int y;
 
     public Square(int sideA, int sideB) {
         this.sideA = sideA;
@@ -20,8 +20,8 @@ public class Square extends Polygons {
         this(sideA, sideA);
     }
 
-
-    // Выдеить в интерфейс с ифами и кейсами и многоугольник и ограничения исключения можно сразу написать
+    // Выдеить в интерфейс с ифами и кейсами и многоугольник и ограничения
+    // исключения можно сразу написать
     @Override
     public String getShapeType() {
         if (this.sideA == this.sideB) {

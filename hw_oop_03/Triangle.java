@@ -13,7 +13,8 @@ public class Triangle extends Polygons {
         setSide(this.sideB);
         setSide(this.sideC);
         this.perimeter = perimeterOut();
-        this.area = (int)Math.sqrt(this.perimeter / 2 *(this.perimeter / 2 - getSide(0))*(this.perimeter / 2 - getSide(1))*(this.perimeter / 2 - getSide(2)));
+        this.area = (int) Math.sqrt(this.perimeter / 2 * (this.perimeter / 2 - getSide(0))
+                * (this.perimeter / 2 - getSide(1)) * (this.perimeter / 2 - getSide(2)));
     }
 
     public Triangle(int sideA, int sideC) {
@@ -27,9 +28,9 @@ public class Triangle extends Polygons {
     @Override
     public String getShapeType() {
         // в интерфейсе описать
-        return "null";
+        return "треугольник";
     }
-    
+
     @Override
     public int getShapePerimeter() {
         return this.perimeter;
