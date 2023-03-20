@@ -32,7 +32,7 @@ public class Program {
             Cat x = (Cat) something;
             str.append("{\n");
             str.append("name: " + x.getName() + "\n");
-            str.append("price: " + x.getPrice() + "\n");
+            str.append("price: " + ((Cat)something).getPrice() + "\n"); // тоже самое что и строчка выше + стр 33 (объединенные)
             str.append("}\n");
             }
         else if (something instanceof Integer) {
@@ -46,6 +46,10 @@ public class Program {
             // str.append("}\n");
         } 
         return str;
+        }
+
+        public static <E> void convert(E value) {
+            
         }
 
 }
