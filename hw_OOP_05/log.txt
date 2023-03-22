@@ -1,0 +1,12 @@
+The entered expression: 1+1
+Expression in the RPN: 1 1+
+Calculation result: 2.0
+
+The entered expression: 2+2
+Expression in the RPN: 2 2+
+Calculation result: 4.0
+
+The entered expression: 3+3
+Expression in the RPN: 3 3+
+Calculation result: 6.0
+
