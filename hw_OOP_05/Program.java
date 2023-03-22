@@ -1,21 +1,34 @@
-import java.util.Stack;
+import java.util.Scanner;
 
-
-public class Program extends RPN{
+public class Program extends RPN {
     public static void main(String[] args) {
 
-               
+        boolean menu = true;
+        Scanner scanner = new Scanner(System.in);
         RPN e = new RPN();
-        String r = e.getRPN("11+22+33");
-        
-        System.out.println(r);
-    
-        double s = e.getResult("11 22 +33+");
 
-        System.out.println(s);
+        while (menu) {
+            System.out.println();
+            System.out.println("1 -> Сосчитать выражение.");
+            System.out.println("0 -> Выйти из программы.");
 
+            System.out.printf("Ваш выбор: ");
+            int choice = scanner.nextInt();
+
+            if (choice == 1) {
+                System.out.printf("Введите выражение без пробелов: ");
+                String input = scanner.next();
+                System.out.println();
+                String r = e.getRPN(input);
+
+                System.out.printf("Ответ: %f\n", e.getResult(r));
+
+            } else {
+                System.out.println("Досвидания!");
+                break;
+            }
+        }
+        scanner.close();
     }
-      
-    
+
 }
-       
