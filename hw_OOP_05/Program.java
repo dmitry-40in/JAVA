@@ -2,7 +2,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Program extends RPN {
+public class Program {
     public static void main(String[] args) throws IOException {
 
         boolean menu = true;
