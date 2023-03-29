@@ -11,3 +11,5 @@ __Task 4:__ [task_004](https://github.com/dmitry-40in/JAVA/tree/main/hw_OOP_04)
 __Task 5:__ [task_005](https://github.com/dmitry-40in/JAVA/tree/main/hw_OOP_05)
 
 __Task 6:__ [task_006](https://github.com/dmitry-40in/JAVA/tree/main/hw_OOP_06)
+
+__Task 7:__ [task_007](https://github.com/dmitry-40in/JAVA/tree/main/hw_OOP_07)

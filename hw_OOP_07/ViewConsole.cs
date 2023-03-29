@@ -12,7 +12,7 @@ class ViewConsole : ViewAbstrct
     override
     public void resultV(double result) 
     {
-        Console.WriteLine($"Введите элемент массива №{result}: ");
+        Console.WriteLine($"result = {result}");
     }
 
 }
