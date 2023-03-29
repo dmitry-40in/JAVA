@@ -1,0 +1,15 @@
+C:\GeekBrains\java_projects\hw_OOP_07\bin\Debug\net7.0\hw_OOP_07.exe
+C:\GeekBrains\java_projects\hw_OOP_07\bin\Debug\net7.0\hw_OOP_07.deps.json
+C:\GeekBrains\java_projects\hw_OOP_07\bin\Debug\net7.0\hw_OOP_07.runtimeconfig.json
+C:\GeekBrains\java_projects\hw_OOP_07\bin\Debug\net7.0\hw_OOP_07.dll
+C:\GeekBrains\java_projects\hw_OOP_07\bin\Debug\net7.0\hw_OOP_07.pdb
+C:\GeekBrains\java_projects\hw_OOP_07\obj\Debug\net7.0\hw_OOP_07.csproj.AssemblyReference.cache
+C:\GeekBrains\java_projects\hw_OOP_07\obj\Debug\net7.0\hw_OOP_07.GeneratedMSBuildEditorConfig.editorconfig
+C:\GeekBrains\java_projects\hw_OOP_07\obj\Debug\net7.0\hw_OOP_07.AssemblyInfoInputs.cache
+C:\GeekBrains\java_projects\hw_OOP_07\obj\Debug\net7.0\hw_OOP_07.AssemblyInfo.cs
+C:\GeekBrains\java_projects\hw_OOP_07\obj\Debug\net7.0\hw_OOP_07.csproj.CoreCompileInputs.cache
+C:\GeekBrains\java_projects\hw_OOP_07\obj\Debug\net7.0\hw_OOP_07.dll
+C:\GeekBrains\java_projects\hw_OOP_07\obj\Debug\net7.0\refint\hw_OOP_07.dll
+C:\GeekBrains\java_projects\hw_OOP_07\obj\Debug\net7.0\hw_OOP_07.pdb
+C:\GeekBrains\java_projects\hw_OOP_07\obj\Debug\net7.0\hw_OOP_07.genruntimeconfig.cache
+C:\GeekBrains\java_projects\hw_OOP_07\obj\Debug\net7.0\ref\hw_OOP_07.dll
